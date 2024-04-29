@@ -1,0 +1,22 @@
+<title>Polies</title>
+<script>
+var x;
+
+function changecolors() {
+    x = 1;
+    setInterval(change, 100);
+}
+
+function change() {
+    if (x === 1) {
+        color = "#1D4EFF";
+        x = 2;
+    } else {
+        color = "#FF1414";
+        x = 1;
+    }
+
+    document.body.style.backgroundColor = color;
+}
+changecolors();
+</script>
